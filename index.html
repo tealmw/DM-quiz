@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DM Quiz</title>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+
+</head>
+<body>
+<div class="col-3 bg-light p-3 border">
+
+<h1 onmouseover="this.innerHTML='This quiz is to see how much you know about Dungeons and Dragons!'" onmouseout="this.innerHTML='Dungeon Masters Quiz!'">Dungeon Masters Quiz!</h1>
+
+</div>
+
+<div class="col-sm-9 bg-light p-3 border">
+<form id="form1">
+
+<h2>What race has the lease amount of movement?</h2>
+<label for="one_string"><input type="radio" name="one" value="0" id="one_string" />Tiefling</label>
+<label for="one_join"><input type="radio" name="one" value="0" id="one_join" />Half-elf</label>
+<label for="one_info"><input type="radio" name="one" value="10" id="one_info" />Halfing</label>
+<label for="one_condition"><input type="radio" name="one" value="0" id="one_condition"/>Trick question! They all have the same base movement.</label>
+
+<h2>How many reactions does a player have while in combat?</h2>
+<label for="two_string"><input type="radio" name="two" value="10" id="two_string"/>Once per round.</label>
+<label for="two_join"><input type="radio" name="two" value="0" id="two_join"/>As many times as their proficiency bonus.</label>
+<label for="two_info"><input type="radio" name="two" value="0" id="two_info" />Twice per short or long rest.</label>
+<label for="two_condition"><input type="radio" name="two" value="0" id="two_condition" />Only certain classes have reactions while in combat.</label>
+
+<h2>What happens when a player rolls a natural 20 on a death saving throw?</h2>
+<label for="three_string"><input type="radio" name="three" value="0" id="three_string" />They stabilize.</label>
+<label for="three_join"><input type="radio" name="three" value="0" id="three_join" />They gain two success points.</label>
+<label for="three_info"><input type="radio" name="three" value="10" id="three_info" />They regain one hit point.</label>
+<label for="three_condition"><input type="radio" name="three" value="0" id="three_condition" />They gain one success point.</label>
+
+<h2>How much healing does a Greater Healing Potion give?</h2>
+<label for="four_string"><input type="radio" name="four" value="0" id="four_string" />2d4+4</label>
+<label for="four_join"><input type="radio" name="four" value="0" id="four_join" />1d8</label>
+<label for="four_info"><input type="radio" name="four" value="10" id="four_info" />4d4+4</label>
+<label for="four_condition"><input type="radio" name="four"  value="0" id="four_condition" />1d8+2</label>
+
+<h2>How much time do ritual spells add to casting?</h2>
+<label for="five_string"><input type="radio" name="five" value="0" id="five_string" />1 hour</label>
+<label for="five_join"><input type="radio" name="five" value="10" id="five_join" />10 minutes</label>
+<label for="five_info"><input type="radio" name="five" value="0" id="five_info" />5 minutes</label>
+<label for="five_condition"><input type="radio" name="five"  value="0" id="five_condition" />1 minute</label>
+
+<h2>How much gold worth of materials is used to cast Revivify?</h2>
+<label for="six_string"><input type="radio" name="six" value="10" id="six_string" />300</label>
+<label for="six_join"><input type="radio" name="six" value="0" id="six_join" />100</label>
+<label for="six_info"><input type="radio" name="six" value="0" id="six_info" />50</label>
+<label for="six_condition"><input type="radio" name="six"  value="0" id="six_condition" />500</label>
+
+<h2>How much of an AC bonus does 3/4 cover give?</h2>
+<label for="seven_string"><input type="radio" name="seven" value="0" id="seven_string" />+2</label>
+<label for="seven_join"><input type="radio" name="seven" value="0" id="seven_join" />+7</label>
+<label for="seven_info"><input type="radio" name="seven" value="0" id="seven_info" />They don't get an AC bonus. The attacker has to roll with disadvantage.</label>
+<label for="seven_condition"><input type="radio" name="seven"  value="10" id="seven_condition" />+5</label>
+
+<h2>What ability modifer is used to make an Animal Handling check?</h2>
+<label for="eight_string"><input type="radio" name="eight" value="0" id="eight_string" />Intelligence</label>
+<label for="eight_join"><input type="radio" name="eight" value="0" id="eight_join" />Constitution</label>
+<label for="eight_info"><input type="radio" name="eight" value="0" id="eight_info" />Charisma</label>
+<label for="eight_condition"><input type="radio" name="eight"  value="10" id="eight_condition" />Wisdom</label>
+
+<h2>True or False: Warlocks can regain their spell slots after a short rest.</h2>
+<label for="nine_string"><input type="radio" name="nine" value="10" id="nine_string" />True</label>
+<label for="nine_join"><input type="radio" name="nine" value="0" id="nine_join" />False</label>
+
+<h2>What saving throw do you have to roll to resist becoming a werewolf?</h2>
+<label for="ten_string"><input type="radio" name="ten" value="10" id="ten_string" />Constitution Saving Throw</label>
+<label for="ten_join"><input type="radio" name="ten" value="0" id="ten_join" />Strength Saving Throw</label>
+<label for="ten_info"><input type="radio" name="ten" value="0" id="ten_info" />Wisdom Saving Throw</label>
+<label for="ten_condition"><input type="radio" name="ten"  value="0" id="ten_condition" />Intelligence Saving Throw</label>
+
+
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+</div>
+<div class="col-3 bg-light p-3 border">
+
+<h2>Your grade is: <span id="grade">__</span></h2>
+<h2 id="grade2"></h2>
+</div><!-- close main div -->
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       one = parseInt(document.querySelector('input[name = "one"]:checked').value);
+	   two = parseInt(document.querySelector('input[name = "two"]:checked').value);
+	   three = parseInt(document.querySelector('input[name = "three"]:checked').value);
+	   four = parseInt(document.querySelector('input[name = "four"]:checked').value);
+	   five = parseInt(document.querySelector('input[name = "five"]:checked').value);
+	   six = parseInt(document.querySelector('input[name = "six"]:checked').value);	   
+	   seven = parseInt(document.querySelector('input[name = "seven"]:checked').value);
+	   eight = parseInt(document.querySelector('input[name = "eight"]:checked').value);
+	   nine = parseInt(document.querySelector('input[name = "nine"]:checked').value);
+	   ten = parseInt(document.querySelector('input[name = "ten"]:checked').value);
+
+
+	   
+	   result = one + two + three + four + five + six + seven + eight + nine +ten;
+	   
+	document.getElementById("grade").innerHTML = result;
+	   
+		if (result == 0) {result2 = "Have you ever played D&D before?<br /><img src='sam_0.gif' />"};
+    	if (result == 10) {result2 = "You got one right!<br /><img src='matt_10.gif' width='300' />"};
+    	if (result == 20) {result2 = "I don't think you play very much.<br /><img src='matt_30.gif' width='300' />"};
+    	if (result == 30) {result2 = "You're probably pretty new to the game. Keep trying!<br /><img src='liam_30.gif' width='300' />"};
+    	if (result == 40) {result2 = "You know some things but not a lot. Try again.<br /><img src='laura_40.gif' width='300' />"};
+    	if (result == 50) {result2 = "Half way there! Keep trying!<br /><img src='ash_50.gif' width='300' />"};
+    	if (result == 60) {result2 = "You'll learn more as you play. Try again!<br /><img src='tals_60.gif' width='300' />"};
+    	if (result == 70) {result2 = "You passed but there's still some things you don't know! Try again!<br /><img src='mars_60.gif' width='300' />"};
+    	if (result == 80) {result2 = "So close! Try again!<br /><img src='travis.gif' width='300' />"};
+    	if (result == 90) {result2 = "You're pretty knowledgeable about Dungeons and Dragons!<br /><img src='travis_90.gif' width='300' />"};
+    	if (result == 100) {result2 = "You're a great Dungeon Master!<br /><img src='cheers_100.gif' width='300' />"};
+
+
+
+			document.getElementById("grade2").innerHTML = result2; 
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
+
+
+
+</body>
+
+</html>
